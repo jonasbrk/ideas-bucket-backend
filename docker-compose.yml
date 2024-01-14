@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  ideas-bucket-backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ideas-bucket-backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/ideas-bucket-backend
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
