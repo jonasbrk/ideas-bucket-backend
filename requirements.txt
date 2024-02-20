@@ -2,3 +2,4 @@ fastapi
 aiofiles
 python-multipart
 uvicorn
+tortoise-orm
